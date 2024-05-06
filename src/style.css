@@ -1,3 +1,7 @@
+header {
+  text-align: center;
+}
+
 body {
   background-color: #d4f1f4;
   font-family: "Playfair Display", serif;
@@ -9,4 +13,8 @@ body {
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+footer {
+  text-align: center;
 }
