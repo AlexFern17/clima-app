@@ -1,7 +1,20 @@
 header {
   text-align: center;
 }
-
+.search-form-input {
+  background-color: #d4f1f4;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  padding: 15px 20px;
+}
+.search-form-button {
+  background-color: #75e6da;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 5px 5px rgba(65, 50, 100, 0.08);
+}
 body {
   background-color: #d4f1f4;
   font-family: "Playfair Display", serif;
