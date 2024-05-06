@@ -4,5 +4,8 @@ body {
 .container {
   background: #ffffff;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 40px auto;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
