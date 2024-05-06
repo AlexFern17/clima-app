@@ -33,7 +33,30 @@ body {
   padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
-
+main {
+  padding: 20px 0;
+}
+.real-time-data {
+  display: flex;
+  justify-content: space-between;
+}
+.city-name {
+  margin: 0;
+}
+.city-details {
+  font-size: 18px;
+  font-weight: 800px;
+  line-height: 36px;
+  color: rgba(48, 54, 57, 0.9);
+}
+.city-details strong {
+  color: #190df9;
+}
+.city-temp {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 5px 25px 0 0;
+}
 footer {
   text-align: center;
   font-size: 12px;
