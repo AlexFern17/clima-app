@@ -1,8 +1,8 @@
 body {
   background-color: #d4f1f4;
 }
-.appContainer {
-  background-color: #ffffff;
+.container {
+  background: #ffffff;
   max-width: 700px;
   margin: 0 auto;
 }
