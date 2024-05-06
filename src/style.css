@@ -2,14 +2,14 @@ header {
   text-align: center;
 }
 .search-form-input {
-  background-color: #d4f1f4;
+  background: #d4f1f4;
   border: none;
   border-radius: 5px;
   width: 80%;
   padding: 15px 20px;
 }
 .search-form-button {
-  background-color: #75e6da;
+  background: #75e6da;
   border: none;
   border-radius: 5px;
   padding: 10px;
