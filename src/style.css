@@ -2,10 +2,10 @@ header {
   text-align: center;
 }
 .search-form-input {
-  background: #c3f7f1;
+  background: #e8f8f9;
   border: none;
   border-radius: 5px;
-  width: 80%;
+  width: 75%;
   padding: 15px 20px;
   font-size: 16px;
 }
