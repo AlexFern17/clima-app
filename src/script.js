@@ -17,6 +17,9 @@ function updateWeather(response) {
 
   let conditionsUpdate = document.querySelector("#conditions");
   conditionsUpdate.innerHTML = response.data.condition.description;
+
+  let iconUpdate = document.querySelector(".city-icon");
+  iconUpdate.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
 }
 
 function formatDate(date) {
@@ -41,7 +44,6 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  //call API
   let apiKey = "097041f091d320fa0aa8fbb43t7o1142";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(updateWeather);
@@ -55,3 +57,5 @@ function searchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
+
+searchCity("Dallas");
