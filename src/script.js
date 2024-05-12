@@ -1,6 +1,6 @@
 function updateWeather(response) {
   let cityTempUpdate = document.querySelector(".city-temp");
-  cityTempUpdate.innerHTML = Math.round(response.data.temperature.current);
+  cityTempUpdate.innerHTML = `${Math.round(response.data.temperature.current)}`;
 
   let cityNameUpdate = document.querySelector("#city-name");
   cityNameUpdate.innerHTML = response.data.city;
