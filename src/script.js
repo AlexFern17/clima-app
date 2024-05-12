@@ -20,6 +20,8 @@ function updateWeather(response) {
 
   let iconUpdate = document.querySelector(".city-icon");
   iconUpdate.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
+
+  updateForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -58,7 +60,13 @@ function searchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 
-function displayForecast() {
+function updateForecast(city) {
+  let apiKey = "097041f091d320fa0aa8fbb43t7o1142";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let days = ["Tues", "Wed", "Thurs", "Fri", "Sat"];
   let forecastHTML = "";
 
@@ -82,4 +90,3 @@ function displayForecast() {
 }
 
 searchCity("Dallas");
-displayForecast();
