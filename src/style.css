@@ -70,7 +70,8 @@ main {
   margin-top: 25px;
 }
 .forecast-data {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
